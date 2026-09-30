@@ -92,12 +92,13 @@ if (readMoreBtn && moreAbout) {
     });
 }
 
-/* ================= CONTACT FORM VALIDATION ================= */
+/* ================= CONTACT FORM (BREVO VERCEL API) ================= */
 const contactForm = document.getElementById("contactForm");
 const formMessage = document.getElementById("form-message");
+const submitBtn = document.getElementById("submitBtn");
 
 if (contactForm && formMessage) {
-    contactForm.addEventListener("submit", function (event) {
+    contactForm.addEventListener("submit", async function (event) {
         event.preventDefault();
 
         const name = document.getElementById("name")?.value.trim();
@@ -106,14 +107,12 @@ if (contactForm && formMessage) {
         const subject = document.getElementById("subject")?.value.trim();
         const message = document.getElementById("message")?.value.trim();
 
-        // Mandatory fields check
         if (!name || !email || !subject || !message) {
             formMessage.textContent = "Please fill in all required fields.";
             formMessage.style.color = "#ff7b72";
             return;
         }
 
-        // Email validation regex
         const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailPattern.test(email)) {
             formMessage.textContent = "Please enter a valid email address.";
@@ -121,21 +120,42 @@ if (contactForm && formMessage) {
             return;
         }
 
-        // Optional phone validation check
-        if (phone && !/^[0-9+\s()-]{7,15}$/.test(phone)) {
-            formMessage.textContent = "Please provide a valid phone number.";
-            formMessage.style.color = "#ff7b72";
-            return;
+        // Disable button during submit
+        if (submitBtn) {
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = 'Sending... <i class="fa-solid fa-spinner fa-spin"></i>';
         }
 
-        // Form Success feedback
-        formMessage.textContent = "Thank you! Your message has been sent successfully.";
-        formMessage.style.color = "#3fb950";
-        contactForm.reset();
+        formMessage.textContent = "Sending message...";
+        formMessage.style.color = "#ffffff";
 
-        setTimeout(() => {
-            formMessage.textContent = "";
-        }, 5000);
+        try {
+            const res = await fetch("/api/send", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ name, email, phone, subject, message })
+            });
+
+            if (res.ok) {
+                formMessage.textContent = "Thank you! Your message has been sent successfully.";
+                formMessage.style.color = "#3fb950";
+                contactForm.reset();
+            } else {
+                formMessage.textContent = "Failed to send message. Please try again later.";
+                formMessage.style.color = "#ff7b72";
+            }
+        } catch (err) {
+            formMessage.textContent = "An error occurred. Please try again.";
+            formMessage.style.color = "#ff7b72";
+        } finally {
+            if (submitBtn) {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = 'Send Message <i class="fa-solid fa-paper-plane"></i>';
+            }
+            setTimeout(() => {
+                formMessage.textContent = "";
+            }, 6000);
+        }
     });
 }
 
@@ -154,7 +174,6 @@ if ("IntersectionObserver" in window) {
 
     revealElements.forEach(element => revealObserver.observe(element));
 } else {
-    // Fallback for legacy browsers without IntersectionObserver
     revealElements.forEach(element => element.classList.add("show"));
 }
 
@@ -258,7 +277,6 @@ if (isPointerFine && cursorDot && cursorRing) {
         });
     });
 } else {
-    // Hide cursor elements on touch devices
     if (cursorDot) cursorDot.style.display = "none";
     if (cursorRing) cursorRing.style.display = "none";
 }
