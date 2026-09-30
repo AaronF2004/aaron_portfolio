@@ -3,15 +3,20 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aaron Fernandes - Full Stack Developer Portfolio. Explore projects, skills, and experience in building modern web applications.">
+    <meta name="keywords" content="Aaron Fernandes, Full Stack Developer, Web Developer, React, Node.js, Express, MongoDB, Portfolio">
+    <meta name="author" content="Aaron Fernandes">
 
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:title" content="Aaron Fernandes | Portfolio">
+    <meta property="og:description" content="Full Stack Developer focused on building modern, responsive, and user-friendly digital experiences.">
+    <meta property="og:type" content="website">
 
-    <title>Your Name | Portfolio</title>
+    <title>Aaron Fernandes | Portfolio</title>
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <!-- Font Awesome (v6.5.2 CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
@@ -20,94 +25,45 @@
 <body>
 
     <!-- ================= CURSOR ================= -->
-
     <div class="cursor-dot"></div>
     <div class="cursor-ring"></div>
 
-
     <!-- ================= NAVBAR ================= -->
-
     <header>
-
         <nav class="navbar">
-
             <a href="#home" class="logo">
                 Port<span>folio.</span>
             </a>
 
             <ul class="nav-links" id="navLinks">
-
-                <li>
-                    <a href="#home">
-                        Home
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#about">
-                        About
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#stack">
-                        Skills
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#experience">
-                        Experience
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#projects">
-                        Projects
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#contact">
-                        Contact
-                    </a>
-                </li>
-
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#stack">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
 
-            <div class="menu-icon" id="menuIcon">
+            <div class="menu-icon" id="menuIcon" aria-label="Toggle navigation menu" role="button" tabindex="0">
                 <i class="fa-solid fa-bars"></i>
             </div>
-
         </nav>
-
     </header>
 
-
     <!-- ================= HOME ================= -->
-
     <section class="home" id="home">
-
         <div class="home-orb orb-one"></div>
         <div class="home-orb orb-two"></div>
 
         <div class="home-container">
-
             <div class="home-content reveal">
-
                 <div class="hello-badge">
                     <span class="status-dot"></span>
                     Available for opportunities
                 </div>
 
-                <h3>
-                    Hello, I'm
-                </h3>
-
-                <h1>
-                    Aaron <span>Fernandes</span>
-                </h1>
-
+                <h3>Hello, I'm</h3>
+                <h1>Aaron <span>Fernandes</span></h1>
                 <h2>
                     I create
                     <span id="typing-text"></span>
@@ -115,1097 +71,489 @@
                 </h2>
 
                 <p>
-                    I'm a passionate developer focused on building
-                    modern, responsive and user-friendly digital
-                    experiences using creative ideas and clean code.
+                    I'm a passionate developer focused on building modern, responsive, and user-friendly digital experiences using creative ideas and clean code.
                 </p>
 
-
                 <!-- SOCIAL ICONS -->
-
                 <div class="social-icons">
-
-                    <a href="https://github.com/AaronF2004" target="_blank">
+                    <a href="https://github.com/AaronF2004" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
                         <i class="fa-brands fa-github"></i>
                     </a>
-
-                    <a href="https://www.linkedin.com/in/aaron-fernandes-2467a536b?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">
+                    <a href="https://www.linkedin.com/in/aaron-fernandes-2467a536b" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
                         <i class="fa-brands fa-linkedin-in"></i>
                     </a>
-
-                    <a href="https://www.instagram.com/aa_ron_1758?stkn=MXFiajEyZmljaGV4Zg==" target="_blank">
+                    <a href="https://www.instagram.com/aa_ron_1758" target="_blank" rel="noopener noreferrer" aria-label="Instagram Profile">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
-
-                    <a href="mailto:aaronfernandes8112004@email.com" target="_blank">
+                    <a href="mailto:aaronfernandes8112004@gmail.com" aria-label="Send Email">
                         <i class="fa-regular fa-envelope"></i>
                     </a>
-
                 </div>
 
-
                 <!-- HERO BUTTONS -->
-
                 <div class="hero-buttons">
-
                     <a href="#projects" class="btn">
                         Explore My Work
                         <i class="fa-solid fa-arrow-right"></i>
                     </a>
-
-                    <a href="#contact"
-                        class="btn btn-outline">
+                    <a href="#contact" class="btn btn-outline">
                         Let's Talk
                         <i class="fa-regular fa-paper-plane"></i>
                     </a>
-
-                    <!-- DOWNLOAD RESUME -->
-
-                    <a href="AaronResume.pdf"
-                        download
-                        class="btn resume-btn">
-
+                    <a href="AaronResume.pdf" download="AaronResume.pdf" class="btn resume-btn" aria-label="Download Aaron's Resume">
                         Download Resume
-
                         <i class="fa-solid fa-download"></i>
-
                     </a>
-
                 </div>
 
-
                 <!-- HERO STATS -->
-
                 <div class="hero-stats">
-
                     <div>
                         <strong>5+</strong>
                         <span>Projects</span>
                     </div>
-
                     <div>
                         <strong>10+</strong>
                         <span>Technologies</span>
                     </div>
-
                     <div>
                         <strong>100%</strong>
                         <span>Passion</span>
                     </div>
-
                 </div>
-
             </div>
-
 
             <!-- PROFILE IMAGE -->
-
             <div class="home-image-wrap reveal">
-
                 <div class="image-ring ring-one"></div>
                 <div class="image-ring ring-two"></div>
-
-                <div class="floating-code code-one">
-                    &lt;/&gt;
-                </div>
-
-                <div class="floating-code code-two">
-                    {}
-                </div>
+                <div class="floating-code code-one">&lt;/&gt;</div>
+                <div class="floating-code code-two">{}</div>
 
                 <div class="home-image">
-
-                    <img src="profile.jpg"
-                        alt="Profile Photo">
-
+                    <img src="profile.jpg" alt="Aaron Fernandes - Profile Photo">
                 </div>
-
             </div>
-
         </div>
 
-
         <!-- SCROLL DOWN -->
-
-        <a href="#about"
-            class="scroll-down">
-
+        <a href="#about" class="scroll-down">
             Scroll Down
-
             <i class="fa-solid fa-arrow-down"></i>
-
         </a>
-
     </section>
 
-
     <!-- ================= ABOUT ================= -->
-
     <section class="about" id="about">
-
         <div class="section-glow"></div>
 
         <div class="about-container">
-
-
             <!-- ABOUT IMAGE -->
-
             <div class="about-image reveal">
-
                 <div class="about-image-frame">
-
-                    <img src="profile.jpg"
-                        alt="About Me">
-
+                    <img src="profile.jpg" alt="Aaron Fernandes - About Me">
                 </div>
-
-
                 <div class="experience-badge">
-
                     <i class="fa-solid fa-code"></i>
-
                     <div>
-
                         <strong>Developer</strong>
-
                         <span>Creative & Curious</span>
-
                     </div>
-
                 </div>
-
             </div>
 
-
             <!-- ABOUT CONTENT -->
-
             <div class="about-content reveal">
-
-                <div class="eyebrow">
-                    ABOUT ME
-                </div>
-
-                <h1>
-                    Turning ideas into
-                    <span>digital experiences.</span>
-                </h1>
-
-                <h2>
-                    I'm a
-                    <span>developer</span>
-                    who loves building things.
-                </h2>
+                <div class="eyebrow">ABOUT ME</div>
+                <h1>Turning ideas into <span>digital experiences.</span></h1>
+                <h2>I'm a <span>developer</span> who loves building things.</h2>
 
                 <p>
-                    I enjoy transforming ideas into clean,
-                    functional and engaging digital products.
-                    My focus is on writing maintainable code
-                    while creating experiences that are simple
-                    and enjoyable to use.
+                    I enjoy transforming ideas into clean, functional, and engaging digital products. My focus is on writing maintainable code while creating experiences that are simple, performant, and enjoyable to use.
                 </p>
 
-                <div class="more-about"
-                    id="moreAbout">
-
+                <div class="more-about" id="moreAbout">
                     <p>
-                        I continuously explore new technologies,
-                        improve my development skills and work
-                        on projects that challenge me to think
-                        creatively and solve real-world problems.
+                        I continuously explore new technologies, sharpen my full-stack development skills, and work on projects that challenge me to solve real-world problems through reliable software engineering.
                     </p>
-
                 </div>
 
-                <button
-                    class="btn"
-                    id="readMoreBtn">
-
-                    Read More
+                <button class="btn" id="readMoreBtn" type="button">
+                    <span>Read More</span>
                     <i class="fa-solid fa-plus"></i>
-
                 </button>
 
-
                 <!-- HIGHLIGHTS -->
-
                 <div class="about-highlights">
-
                     <div class="highlight">
                         <i class="fa-solid fa-check"></i>
                         Clean Code
                     </div>
-
                     <div class="highlight">
                         <i class="fa-solid fa-check"></i>
                         Responsive Design
                     </div>
-
                     <div class="highlight">
                         <i class="fa-solid fa-check"></i>
                         Problem Solving
                     </div>
-
                 </div>
-
             </div>
-
         </div>
-
     </section>
 
-
     <!-- ================= TECH STACK ================= -->
-
-<section class="stack" id="stack">
-
-    <div class="stack-container reveal">
-
-        <div class="eyebrow">
-            MY TOOLKIT
-        </div>
-
-        <h1 class="stack-title">
-            Tech <span>Stack.</span>
-        </h1>
-
-        <p class="section-subtitle">
-            Technologies and tools I use to bring ideas
-            to life.
-        </p>
-
-
-        <div class="stack-grid">
-
-
-            <!-- FRONTEND -->
-
-            <div class="stack-category">
-
-                <div class="category-heading">
-
-                    <span class="category-number">
-                        01
-                    </span>
-
-                    <h3>
-                        Frontend
-                    </h3>
-
-                </div>
-
-
-                <div class="stack-items">
-
-                    <div class="stack-item">
-                        <i class="fa-brands fa-js"></i>
-                        JavaScript
-                    </div>
-
-                    <div class="stack-item">
-                        <i class="fa-brands fa-react"></i>
-                        React
-                    </div>
-
-                    <div class="stack-item">
-                        <i class="fa-solid fa-wind"></i>
-                        Tailwind CSS
-                    </div>
-
-                    <div class="stack-item">
-                        <i class="fa-brands fa-html5"></i>
-                        HTML
-                    </div>
-
-                    <div class="stack-item">
-                        <i class="fa-brands fa-css3-alt"></i>
-                        CSS
-                    </div>
-
-                    <div class="stack-item">
-                        <i class="fa-brands fa-bootstrap"></i>
-                        Bootstrap
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- BACKEND -->
-
-            <div class="stack-category">
-
-                <div class="category-heading">
-
-                    <span class="category-number">
-                        02
-                    </span>
-
-                    <h3>
-                        Backend
-                    </h3>
-
-                </div>
-
-
-                <div class="stack-items">
-
-                    <div class="stack-item">
-                        <i class="fa-brands fa-node-js"></i>
-                        Node.js
-                    </div>
-
-                    <div class="stack-item">
-                        <i class="fa-solid fa-n"></i>
-                        Next.js
-                    </div>
-
-                    <div class="stack-item">
-                        <i class="fa-solid fa-server"></i>
-                        Express.js
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- DATABASE -->
-
-            <div class="stack-category">
-
-                <div class="category-heading">
-
-                    <span class="category-number">
-                        03
-                    </span>
-
-                    <h3>
-                        Database
-                    </h3>
-
-                </div>
-
-
-                <div class="stack-items">
-
-                    <div class="stack-item">
-                        <i class="fa-solid fa-leaf"></i>
-                        MongoDB
-                    </div>
-
-                    <div class="stack-item">
-                        <i class="fa-solid fa-database"></i>
-                        Mongoose
-                    </div>
-
-                    <div class="stack-item">
-                        <i class="fa-solid fa-database"></i>
-                        Oracle
-                    </div>
-
-                    <div class="stack-item">
-                        <i class="fa-solid fa-database"></i>
-                        MySQL
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- TOOLS & LANGUAGES -->
-
-            <div class="stack-category">
-
-                <div class="category-heading">
-
-                    <span class="category-number">
-                        04
-                    </span>
-
-                    <h3>
-                        Tools & Languages
-                    </h3>
-
-                </div>
-
-
-                <div class="stack-items">
-
-                    <div class="stack-item">
-                        <i class="fa-brands fa-git-alt"></i>
-                        Git
-                    </div>
-
-                    <div class="stack-item">
-                        <i class="fa-brands fa-docker"></i>
-                        Docker
-                    </div>
-
-                    <div class="stack-item">
-                        <i class="fa-brands fa-python"></i>
-                        Python
-                    </div>
-
-                    <div class="stack-item">
-                        <i class="fa-brands fa-java"></i>
-                        Java
-                    </div>
-
-                    <div class="stack-item">
-                        <i class="fa-brands fa-github"></i>
-                        GitHub
-                    </div>
-
-                    <div class="stack-item">
-                        <i class="fa-solid fa-code"></i>
-                        VS Code
-                    </div>
-
-                </div>
-
-            </div>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-
-    <!-- ================= EXPERIENCE ================= -->
-
-    <section class="experience"
-        id="experience">
-
-        <div class="experience-container">
-
-            <div class="eyebrow reveal">
-                MY JOURNEY
-            </div>
-
-            <h1 class="section-title reveal">
-                Experience &
-                <span>Learning.</span>
-            </h1>
-
-            <p class="section-subtitle reveal">
-                A timeline of my development journey,
-                projects and continuous learning.
+    <section class="stack" id="stack">
+        <div class="stack-container reveal">
+            <div class="eyebrow">MY TOOLKIT</div>
+            <h1 class="stack-title">Tech <span>Stack.</span></h1>
+            <p class="section-subtitle">
+                Technologies and tools I use to bring ideas to life.
             </p>
 
+            <div class="stack-grid">
+                <!-- FRONTEND -->
+                <div class="stack-category">
+                    <div class="category-heading">
+                        <span class="category-number">01</span>
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="stack-items">
+                        <div class="stack-item"><i class="fa-brands fa-js"></i> JavaScript</div>
+                        <div class="stack-item"><i class="fa-brands fa-react"></i> React</div>
+                        <div class="stack-item"><i class="fa-solid fa-wind"></i> Tailwind CSS</div>
+                        <div class="stack-item"><i class="fa-brands fa-html5"></i> HTML5</div>
+                        <div class="stack-item"><i class="fa-brands fa-css3-alt"></i> CSS3</div>
+                        <div class="stack-item"><i class="fa-brands fa-bootstrap"></i> Bootstrap</div>
+                    </div>
+                </div>
+
+                <!-- BACKEND -->
+                <div class="stack-category">
+                    <div class="category-heading">
+                        <span class="category-number">02</span>
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="stack-items">
+                        <div class="stack-item"><i class="fa-brands fa-node-js"></i> Node.js</div>
+                        <div class="stack-item"><i class="fa-solid fa-server"></i> Express.js</div>
+                        <div class="stack-item"><i class="fa-solid fa-network-wired"></i> REST APIs</div>
+                    </div>
+                </div>
+
+                <!-- DATABASE -->
+                <div class="stack-category">
+                    <div class="category-heading">
+                        <span class="category-number">03</span>
+                        <h3>Database</h3>
+                    </div>
+                    <div class="stack-items">
+                        <div class="stack-item"><i class="fa-solid fa-leaf"></i> MongoDB</div>
+                        <div class="stack-item"><i class="fa-solid fa-database"></i> Mongoose</div>
+                        <div class="stack-item"><i class="fa-solid fa-database"></i> MySQL</div>
+                        <div class="stack-item"><i class="fa-solid fa-database"></i> Oracle</div>
+                    </div>
+                </div>
+
+                <!-- TOOLS & LANGUAGES -->
+                <div class="stack-category">
+                    <div class="category-heading">
+                        <span class="category-number">04</span>
+                        <h3>Tools & Languages</h3>
+                    </div>
+                    <div class="stack-items">
+                        <div class="stack-item"><i class="fa-brands fa-git-alt"></i> Git</div>
+                        <div class="stack-item"><i class="fa-brands fa-github"></i> GitHub</div>
+                        <div class="stack-item"><i class="fa-brands fa-docker"></i> Docker</div>
+                        <div class="stack-item"><i class="fa-brands fa-python"></i> Python</div>
+                        <div class="stack-item"><i class="fa-brands fa-java"></i> Java</div>
+                        <div class="stack-item"><i class="fa-solid fa-code"></i> VS Code</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= EXPERIENCE ================= -->
+    <section class="experience" id="experience">
+        <div class="experience-container">
+            <div class="eyebrow reveal">MY JOURNEY</div>
+            <h1 class="section-title reveal">Experience & <span>Learning.</span></h1>
+            <p class="section-subtitle reveal">
+                A timeline of my development journey, projects, and continuous learning.
+            </p>
 
             <div class="timeline">
-
-
+                <!-- 2026 -->
                 <div class="timeline-item reveal">
-
                     <div class="timeline-dot"></div>
-
                     <div class="experience-card">
-
                         <div class="experience-icon">
                             <i class="fa-solid fa-code"></i>
                         </div>
-
                         <div class="experience-content">
-
-                            <span class="experience-date">
-                                2026
-                            </span>
-
-                            <h2>
-                                Full Stack Development
-                            </h2>
-
-                            <h3>
-                                Personal Projects
-                            </h3>
-
+                            <span class="experience-date">2026</span>
+                            <h2>Full Stack Development</h2>
+                            <h3>Personal & Open Source Projects</h3>
                             <p>
-                                Building full-stack applications
-                                using modern frontend and backend
-                                technologies.
+                                Engineering full-stack applications with modular architecture, robust database design, user authentication, and responsive frontend interfaces.
                             </p>
-
                             <div class="mini-tags">
-
-                                <span>
-                                    HTML
-                                </span>
-
-                                <span>
-                                    CSS
-                                </span>
-
-                                <span>
-                                    JavaScript
-                                </span>
-
-                                <span>
-                                    Node.js
-                                </span>
-
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>Express</span>
+                                <span>MongoDB</span>
                             </div>
-
                         </div>
-
                     </div>
-
                 </div>
 
-
+                <!-- 2025 -->
                 <div class="timeline-item reveal">
-
                     <div class="timeline-dot"></div>
-
                     <div class="experience-card">
-
                         <div class="experience-icon">
                             <i class="fa-solid fa-laptop-code"></i>
                         </div>
-
                         <div class="experience-content">
-
-                            <span class="experience-date">
-                                2025
-                            </span>
-
-                            <h2>
-                                Web Development
-                            </h2>
-
-                            <h3>
-                                Learning & Practice
-                            </h3>
-
+                            <span class="experience-date">2025</span>
+                            <h2>Web Development Internship</h2>
+                            <h3>Vyosim Tech Labs</h3>
                             <p>
-                                Developing responsive websites
-                                and learning backend development
-                                through practical projects.
+                                Built interactive web components, integrated external APIs, and collaborated on responsive frontend and backend logic.
                             </p>
-
                             <div class="mini-tags">
-
-                                <span>
-                                    JavaScript
-                                </span>
-
-                                <span>
-                                    Express
-                                </span>
-
-                                <span>
-                                    MongoDB
-                                </span>
-
+                                <span>JavaScript</span>
+                                <span>REST APIs</span>
+                                <span>Tailwind CSS</span>
                             </div>
-
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
-
         </div>
-
     </section>
 
-
     <!-- ================= PROJECTS ================= -->
-
-    <section class="projects"
-        id="projects">
-
+    <section class="projects" id="projects">
         <div class="projects-container">
-
-            <div class="eyebrow reveal">
-                MY WORK
-            </div>
-
-            <h1 class="section-title reveal">
-                Featured
-                <span>Projects.</span>
-            </h1>
-
+            <div class="eyebrow reveal">MY WORK</div>
+            <h1 class="section-title reveal">Featured <span>Projects.</span></h1>
             <p class="section-subtitle reveal">
-                Some of the projects I've built while
-                learning and experimenting with technology.
+                A showcase of projects built with passion, scalability, and modern web standards.
             </p>
 
-
             <div class="project-container">
-
                 <!-- PROJECT 1 -->
-
                 <div class="project-card reveal">
-
                     <div class="project-top">
-
-                        <div class="project-icon">
-                            <i class="fa-solid fa-cloud-sun"></i>
-                        </div>
-
-                        <span class="project-index">
-                            01
-                        </span>
-
-                    </div>
-
-                    <h2>
-                        Weather App
-                    </h2>
-
-                    <p>
-                        A responsive weather application
-                        that displays weather information
-                        using an API.🌤️
-                    </p>
-
-                    <div class="project-tech">
-
-                        <span>
-                            HTML
-                        </span>
-
-                        <span>
-                            CSS
-                        </span>
-
-                        <span>
-                            JavaScript
-                        </span>
-
-                        <span>
-                            API
-                        </span>
-
-                    </div>
-
-                    <a href="https://weather-app-ten-beta-70.vercel.app/"
-                        class="project-link">
-
-                        View Project
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-
-                    </a>
-
-                </div>
-
-
-                <!-- PROJECT 2 -->
-
-                <div class="project-card reveal">
-
-                    <div class="project-top">
-
                         <div class="project-icon">
                             <i class="fa-solid fa-plane"></i>
                         </div>
-
-                        <span class="project-index">
-                            02
-                        </span>
-
+                        <span class="project-index">01</span>
                     </div>
-
-                    <h2>
-                        VestaGo
-                    </h2>
-
+                    <h2>VestaGo</h2>
                     <p>
-                      Full-stack travel and dining booking app built with Node.js, Express, and MongoDB. 
-                      Supports real-time search, 
-                      interactive Mapbox maps, 
-                      dynamic check-in/out pricing, 
-                      and automated email vouchers.🧳🏝️.
+                        Full-stack travel and dining booking app featuring real-time search, Mapbox integration, dynamic date-based pricing, and automated voucher generation.
                     </p>
-
                     <div class="project-tech">
-
-                        <span>
-                            Node.Js
-                        </span>
-
-                        <span>
-                            Express
-                        </span>
-
-                        <span>
-                            JavaScript
-                        </span>
-
-                        <span>
-                            API
-                        </span>
-
-                        <span>
-                            MongoDB
-                        </span>
-
+                        <span>Node.js</span>
+                        <span>Express</span>
+                        <span>MongoDB</span>
+                        <span>Mapbox API</span>
                     </div>
-
-                    <a href="https://vesta-go.vercel.app/"
-                        class="project-link">
-
+                    <a href="https://vesta-go.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">
                         View Project
                         <i class="fa-solid fa-arrow-up-right-from-square"></i>
-
                     </a>
-
                 </div>
 
+                <!-- PROJECT 2 -->
+                <div class="project-card reveal">
+                    <div class="project-top">
+                        <div class="project-icon">
+                            <i class="fa-solid fa-cloud-sun"></i>
+                        </div>
+                        <span class="project-index">02</span>
+                    </div>
+                    <h2>Weather App</h2>
+                    <p>
+                        A responsive weather application that delivers real-time weather analytics, forecasts, and responsive layouts powered by OpenWeather API.
+                    </p>
+                    <div class="project-tech">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>Weather API</span>
+                    </div>
+                    <a href="https://weather-app-ten-beta-70.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">
+                        View Project
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
 
                 <!-- PROJECT 3 -->
-
                 <div class="project-card reveal">
-
                     <div class="project-top">
-
                         <div class="project-icon">
                             <i class="fa-solid fa-shield-halved"></i>
                         </div>
-
-                        <span class="project-index">
-                            03
-                        </span>
-
+                        <span class="project-index">03</span>
                     </div>
-
-                    <h2>
-                        UPI Fraud Detection
-                    </h2>
-
+                    <h2>UPI Fraud Detection</h2>
                     <p>
-                        A machine learning project focused
-                        on detecting potentially fraudulent
-                        UPI transactions.
+                        A machine learning classification model developed to detect and flag potentially fraudulent UPI transactions using transaction behavior patterns.
                     </p>
-
                     <div class="project-tech">
-
-                        <span>
-                            Python
-                        </span>
-
-                        <span>
-                            ML
-                        </span>
-
-                        <span>
-                            Pandas
-                        </span>
-
-                        <span>
-                            Scikit-learn
-                        </span>
-
+                        <span>Python</span>
+                        <span>Scikit-learn</span>
+                        <span>Pandas</span>
+                        <span>NumPy</span>
                     </div>
-
-                    <a href="#"
-                        class="project-link">
-
-                        View Project
+                    <a href="https://github.com/AaronF2004" target="_blank" rel="noopener noreferrer" class="project-link">
+                        View Code
                         <i class="fa-solid fa-arrow-up-right-from-square"></i>
-
                     </a>
-
                 </div>
-
             </div>
-
         </div>
-
     </section>
 
-
     <!-- ================= CONTACT ================= -->
-
-    <section class="contact"
-        id="contact">
-
+    <section class="contact" id="contact">
         <div class="contact-bg-circle circle-one"></div>
         <div class="contact-bg-circle circle-two"></div>
 
-
         <div class="contact-container">
-
-
             <!-- CONTACT INTRO -->
-
             <div class="contact-intro reveal">
-
-                <div class="eyebrow">
-                    GET IN TOUCH
-                </div>
-
-                <h1>
-                    Let's build
-                    something
-                    <span>great.</span>
-                </h1>
-
+                <div class="eyebrow">GET IN TOUCH</div>
+                <h1>Let's build something <span>great.</span></h1>
                 <p>
-                    Have an idea, project or opportunity?
-                    Send me a message and let's connect.
+                    Have an idea, project, or opportunity? Drop me a message and let's connect.
                 </p>
 
-
                 <div class="contact-cards">
-
-                    <a href="mailto:aaronfernandes8112004@email.com"
-                        class="contact-card">
-
+                    <a href="mailto:aaronfernandes8112004@gmail.com" class="contact-card">
                         <span class="contact-card-icon">
                             <i class="fa-solid fa-envelope"></i>
                         </span>
-
                         <span>
                             <small>Email</small>
-                            <strong>
-                                your@email.com
-                            </strong>
+                            <strong>aaronfernandes8112004@gmail.com</strong>
                         </span>
-
-                        <span class="arrow">
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </span>
-
+                        <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
                     </a>
 
-
-                    <a href="https://www.linkedin.com/in/aaron-fernandes-2467a536b?utm_source=share_via&utm_content=profile&utm_medium=member_android"
-                        class="contact-card">
-
+                    <a href="https://www.linkedin.com/in/aaron-fernandes-2467a536b" target="_blank" rel="noopener noreferrer" class="contact-card">
                         <span class="contact-card-icon">
                             <i class="fa-brands fa-linkedin-in"></i>
                         </span>
-
                         <span>
                             <small>LinkedIn</small>
-                            <strong>
-                                Connect with me
-                            </strong>
+                            <strong>Aaron Fernandes</strong>
                         </span>
-
-                        <span class="arrow">
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </span>
-
+                        <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
                     </a>
 
-
-                    <a href="https://github.com/AaronF2004"
-                        class="contact-card">
-
+                    <a href="https://github.com/AaronF2004" target="_blank" rel="noopener noreferrer" class="contact-card">
                         <span class="contact-card-icon">
                             <i class="fa-brands fa-github"></i>
                         </span>
-
                         <span>
                             <small>GitHub</small>
-                            <strong>
-                                View projects
-                            </strong>
+                            <strong>AaronF2004</strong>
                         </span>
-
-                        <span class="arrow">
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </span>
-
+                        <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
                     </a>
-
                 </div>
-
             </div>
-
 
             <!-- CONTACT FORM -->
-
             <div class="contact-form-wrap reveal">
-
                 <div class="form-glow"></div>
-
                 <div class="form-heading">
-
-                    <span>
-                        Send a Message
-                    </span>
-
+                    <span>Send a Message</span>
                     <i class="fa-regular fa-paper-plane"></i>
-
                 </div>
 
-
                 <form id="contactForm">
-
-
                     <div class="input-row">
-
                         <div class="input-box">
-
-                            <label for="name">
-                                Name
-                            </label>
-
-                            <input
-                                type="text"
-                                id="name"
-                                placeholder="Your name">
-
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
                         </div>
 
-
                         <div class="input-box">
-
-                            <label for="email">
-                                Email
-                            </label>
-
-                            <input
-                                type="email"
-                                id="email"
-                                placeholder="your@email.com">
-
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
                         </div>
-
                     </div>
 
-
                     <div class="input-row">
-
                         <div class="input-box">
-
-                            <label for="phone">
-                                Phone
-                            </label>
-
-                            <input
-                                type="tel"
-                                id="phone"
-                                placeholder="Your phone number">
-
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Your phone number">
                         </div>
 
-
                         <div class="input-box">
-
-                            <label for="subject">
-                                Subject
-                            </label>
-
-                            <input
-                                type="text"
-                                id="subject"
-                                placeholder="Subject">
-
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
                         </div>
-
                     </div>
-
 
                     <div class="input-box">
-
-                        <label for="message">
-                            Message
-                        </label>
-
-                        <textarea
-                            id="message"
-                            placeholder="Write your message..."></textarea>
-
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
                     </div>
 
-
-                    <button
-                        type="submit"
-                        class="btn submit-btn">
-
+                    <button type="submit" class="btn submit-btn">
                         Send Message
-
                         <i class="fa-solid fa-paper-plane"></i>
-
                     </button>
 
-
                     <div id="form-message"></div>
-
                 </form>
-
             </div>
-
         </div>
-
     </section>
 
-
     <!-- ================= FOOTER ================= -->
-
     <footer>
-
         <div class="footer-content">
-
-            <a href="#home"
-                class="logo">
-
+            <a href="#home" class="logo">
                 Port<span>folio.</span>
-
             </a>
-
-            <p>
-                Building ideas into digital experiences.
-            </p>
-
+            <p>Building ideas into digital experiences.</p>
 
             <div class="social-icons">
-
-                <a href="https://github.com/AaronF2004" target="_blank">
+                <a href="https://github.com/AaronF2004" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                     <i class="fa-brands fa-github"></i>
                 </a>
-
-                <a href="https://www.linkedin.com/in/aaron-fernandes-2467a536b?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">
+                <a href="https://www.linkedin.com/in/aaron-fernandes-2467a536b" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                     <i class="fa-brands fa-linkedin-in"></i>
                 </a>
-
-                <a href="https://www.instagram.com/aa_ron_1758?stkn=MXFiajEyZmljaGV4Zg==" target="_blank">
+                <a href="https://www.instagram.com/aa_ron_1758" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
-
-                <a href="mailto:aaronfernandes8112004@email.com" target="_blank">
+                <a href="mailto:aaronfernandes8112004@gmail.com" aria-label="Email">
                     <i class="fa-regular fa-envelope"></i>
                 </a>
-
             </div>
 
-
             <p class="copyright">
-                © 2026 Your Name. All rights reserved.
+                © 2026 Aaron Fernandes. All rights reserved.
             </p>
-
         </div>
-
     </footer>
 
-
     <!-- ================= UP ARROW ================= -->
-
-    <a href="#home"
-        class="scroll-up"
-        id="scrollUp">
-
+    <a href="#home" class="scroll-up" id="scrollUp" aria-label="Scroll to top">
         <i class="fa-solid fa-arrow-up"></i>
-
     </a>
 
-
     <!-- ================= JAVASCRIPT ================= -->
-
     <script src="script.js"></script>
-
 </body>
 
 </html>
